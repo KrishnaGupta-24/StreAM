@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #8e44ad, #9b59b6);
+  color: white;
+  font-family: 'Pacifico', cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.splash-container {
+  text-align: center;
+  animation: fadeSlideIn 1.5s ease-in-out forwards;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
+}
+
+.fade-in.delay {
+  animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

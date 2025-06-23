@@ -1,0 +1,160 @@
+/* General reset and styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f2e6f5, #d4d0ff); /* Soft lavender gradient */
+  color: #333;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #6a0dad; /* Lavender color */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Section styles for individual types of stress */
+section {
+  margin: 20px 0;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: #6a0dad; /* Lavender color */
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-size: 1.2em;
+  color: #555;
+  margin: 8px 0;
+  padding: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Interactive checkboxes */
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+input[type="checkbox"]:checked + label {
+  color: #d3d3d3; /* Lightened color */
+  text-decoration: line-through;
+}
+
+input[type="checkbox"]:not(:checked) + label {
+  color: #6a0dad; /* Lavender color for incomplete goals */
+}
+
+label:hover {
+  cursor: pointer;
+  color: #6a0dad; /* Lavender hover effect */
+  font-weight: bold;
+}
+
+/* Hover effect for buttons or links */
+.button, .next-btn {
+  background-color: #6a0dad;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.button:hover, .next-btn:hover {
+  background-color: #8a2be2;
+  transition: 0.3s;
+}
+
+/* Add smooth hover effects for sections and goals */
+.goal, .goal label {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.goal:hover, .goal label:hover {
+  transform: scale(1.05);
+  background-color: #f3e5f5; /* Light lavender background on hover */
+}
+
+/* Add spacing between sections for a clean layout */
+section {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #6a0dad;
+  color: #fff;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #8a2be2;
+}
+
+.next-btn {
+  background-color: #6a0dad;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 1.1em;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.next-btn:hover {
+  background-color: #8a2be2;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* For responsive design */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  label {
+    font-size: 1em;
+  }
+  .button, .next-btn {
+    font-size: 1em;
+  }
+}

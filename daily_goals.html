@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Goals - Stress Type</title>
+  <link rel="stylesheet" href="daily_goals.css"> <!-- Link to your CSS file here -->
+</head>
+<body>
+
+  <div class="container">
+    <h1>StreAM - Daily Goals</h1>
+    
+    <!-- This is where the stress type and goals will be dynamically injected -->
+
+    <div id="stress-type-container">
+      <h2 id="stress-type-title">Analyzing your stress type...</h2>
+
+      <!-- Physical Stress Goals -->
+      <section id="physical-stress" class="stress-goals">
+        <h3>Physical Stress Goals</h3>
+        <div class="goal">
+          <label><input type="checkbox"> Ensure adequate rest and sleep</label>
+        </div>
+        <div class="goal">
+          <label><input type="checkbox"> Engage in light, regular exercise</label>
+        </div>
+        <div class="goal">
+          <label><input type="checkbox"> Maintain good posture</label>
+        </div>
+        <div class="goal">
+          <label><input type="checkbox"> Stay hydrated</label>
+        </div>
+        <div class="goal">
+          <label><input type="checkbox"> Eat nutritious foods</label>
+        </div>
+        <div class="goal">
+          <label><input type="checkbox"> Listen to your body</label>
+        </div>
+      </section>
+
+      <!-- Mental Stress Goals -->
+      <section id="mental-stress" class="stress-goals">
+        <h3>Mental Stress Goals</h3>
+        <div class="goal">
+          <label><input type="checkbox"> Practice mindfulness and meditation</label>
+        </div>
+        <div class="goal">
+          <label><input type="checkbox"> Take regular mental breaks</label>
+        </div>
+        <div class="goal">
+          <label><input type="checkbox"> Organize tasks with clear priorities</label>
+        </div>
+        <div class="goal">
+          <label><input type="checkbox"> Talk to someone (counselors, friends)</label>
+        </div>
+        <div class="goal">
+          <label><input type="checkbox"> Engage in relaxing hobbies</label>
+        </div>
+        <div class="goal">
+          <label><input type="checkbox"> Maintain healthy sleep and diet</label>
+        </div>
+      </section>
+
+      <!-- Behavioral Stress Goals -->
+      <section id="behavioral-stress" class="stress-goals">
+        <h3>Behavioral Stress Goals</h3>
+        <div class="goal">
+          <label><input type="checkbox"> Improve time management</label>
+        </div>
+        <div class="goal">
+          <label><input type="checkbox"> Develop healthy coping mechanisms</label>
+        </div>
+        <div class="goal">
+          <label><input type="checkbox"> Practice relaxation techniques</label>
+        </div>
+        <div class="goal">
+          <label><input type="checkbox"> Avoid unhealthy habits</label>
+        </div>
+        <div class="goal">
+          <label><input type="checkbox"> Build a support system</label>
+        </div>
+        <div class="goal">
+          <label><input type="checkbox"> Practice positive self-talk</label>
+        </div>
+        <div class="goal">
+          <label><input type="checkbox"> Take regular breaks</label>
+        </div>
+      </section>
+
+      <!-- Emotional Stress Goals -->
+      <section id="emotional-stress" class="stress-goals">
+        <h3>Emotional Stress Goals</h3>
+        <div class="goal">
+          <label><input type="checkbox"> Express your emotions</label>
+        </div>
+        <div class="goal">
+          <label><input type="checkbox"> Practice relaxation techniques</label>
+        </div>
+        <div class="goal">
+          <label><input type="checkbox"> Engage in physical activities</label>
+        </div>
+        <div class="goal">
+          <label><input type="checkbox"> Maintain a healthy lifestyle</label>
+        </div>
+        <div class="goal">
+          <label><input type="checkbox"> Set boundaries</label>
+        </div>
+        <div class="goal">
+          <label><input type="checkbox"> Seek professional help if needed</label>
+        </div>
+        <div class="goal">
+          <label><input type="checkbox"> Practice self-care activities</label>
+        </div>
+      </section>
+
+    </div>
+
+    <div class="next-btn-container">
+      <a href="nextpage.html" class="next-btn">Next</a>
+    </div>
+  </div>
+
+  <script src="daily_goals.js"></script> <!-- Link to JS file for goal interactions -->
+  <script>
+    // Sample function to simulate stress type analysis
+    function analyzeStressType() {
+      // Assuming you get the stress type based on the user's previous selection (for example, via URL parameters or user input)
+      // Here, we use a sample that assigns 'mental' stress based on some condition.
+      const stressType = 'mental'; // This would typically come from user input or data
+
+      // Display appropriate goals based on stress type
+      document.getElementById("stress-type-title").innerHTML = `You are experiencing ${stressType.charAt(0).toUpperCase() + stressType.slice(1)} Stress`;
+
+      // Hide all goal sections initially
+      const stressSections = document.querySelectorAll('.stress-goals');
+      stressSections.forEach(section => {
+        section.style.display = 'none';
+      });
+
+      // Show the relevant section based on the analyzed stress type
+      const selectedStressSection = document.getElementById(`${stressType}-stress`);
+      if (selectedStressSection) {
+        selectedStressSection.style.display = 'block';
+      }
+    }
+
+    // Call analyzeStressType function to update the page
+    window.onload = analyzeStressType;
+  </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StreAM - Self-Assessment</title>
+
+  <!-- Link external CSS -->
+  <link rel="stylesheet" href="self_asses.css">
+
+  <!-- Link Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="main-container">
+    <h1 class="stream-title">StreAM</h1>
+
+    <div class="form-container">
+      <h2>Self-Assessment</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Enter your name">
+        </div>
+
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input type="number" id="age" placeholder="Enter your age">
+        </div>
+
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <select id="gender">
+            <option value="">Select</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+            <option>Prefer not to say</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="occupation">Occupation / Type of Work</label>
+          <input type="text" id="occupation" placeholder="e.g., Student, Engineer, Freelancer">
+        </div>
+
+        <div class="form-group">
+          <label for="workhours">Average Work/Study Hours per Day</label>
+          <select id="workhours">
+            <option value="">Select</option>
+            <option>Less than 4 hours</option>
+            <option>4–6 hours</option>
+            <option>6–8 hours</option>
+            <option>More than 8 hours</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="workmode">Mode of Work/Study</label>
+          <select id="workmode">
+            <option value="">Select</option>
+            <option>On-site</option>
+            <option>Remote</option>
+            <option>Hybrid</option>
+            <option>Not Applicable</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="routine">Is your current routine manageable?</label>
+          <select id="routine">
+            <option value="">Select</option>
+            <option>Yes</option>
+            <option>No</option>
+            <option>Sometimes</option>
+          </select>
+        </div>
+
+        <a href="symptom.html" class="button">Next</a>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

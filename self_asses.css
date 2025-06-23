@@ -1,0 +1,116 @@
+/* self_asses.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f3e5f5, #e1bee7); /* Soft Light Purple */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .main-container {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .stream-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.5rem;
+    color: #8e44ad;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(142, 68, 173, 0.4);
+  }
+  
+  .form-container {
+    background: rgba(142, 68, 173, 0.9); /* Slight Glassy Dark Purple */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+  }
+  
+  h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #f8f8f8;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem;
+  }
+  select option {
+    background-color: #8e44ad; /* Dark purple background for options */
+    color: white; /* White text */
+  }
+  input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  input:focus,
+  select:focus {
+    outline: none;
+    border-color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .button {
+    display: inline-block;
+    width: 100%;
+    padding: 14px;
+    background-color: white;
+    color: #8e44ad;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #9b59b6;
+    color: white;
+  }
+  
+  /* Smooth fade in */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
